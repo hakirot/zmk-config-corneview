@@ -33,7 +33,8 @@
 //                    | GUI | ALT | TAB |   | INS |     |     |
                         bindings = <
    &kp TILDE &kp N0   &kp N1 &kp N2   &kp N3   &kp PLUS    &kp EQUAL &kp PLUS  &kp LPAR  &kp RPAR &kp N0   &kp INS
-   &kp LSHFT &kp CAPS &kp N4 &kp N5   &kp N6   &kp UNDER   &kp UNDER &kp MINUS &kp LBKT  &kp RBKT &kp BSLH &kp PIPE
+// &kp LSHFT &kp CAPS &kp N4 &kp N5   &kp N6   &kp UNDER   &kp UNDER &kp MINUS &kp LBKT  &kp RBKT &kp BSLH &kp PIPE
+   &kp LSHFT &kp CAPS &kp N4 &kp N5   &kp N6   &kp UNDER   &kp UNDER &kp MINUS &mt RGUI LBKT  &mt RALT RBKT &kp BSLH &kp PIPE
    &kp LCTRL &trans   &kp N7 &kp N8   &kp N9   &kp MINUS   &kp EQUAL &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &trans
                              &kp LGUI &kp LALT &kp TAB     &kp INS   &trans    &trans
                         >;
