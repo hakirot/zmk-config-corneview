@@ -32,7 +32,7 @@
 // | LWR  |  H  |  7  |  8  |  9  |  L  |   |  =  |  _  |  {  |  }  | "|" |      |
 //                    | GUI | ALT | TAB |   | RET |     |     |
                         bindings = <
-   &kp TILDE &kp N0   &kp N1 &kp N2   &kp N3   &kp UNDER   &kp EQUAL &kp PLUS  &kp LPAR  &kp RPAR &kp N0   &kp DEL
+   &kp TILDE &kp N0   &kp N1 &kp N2   &kp N3   &kp UNDER   &kp EQUAL &kp PLUS  &kp LPAR  &kp RPAR &kp N0    &kp DEL
    &kp LSHFT &kp CAPS &kp N4 &kp N5   &kp N6   &kp EQUAL   &kp UNDER &kp MINUS &mt RGUI LBKT  &mt RALT RBKT &mt RCTRL BSLH &kp RSHFT
    &trans    &kp H    &kp N7 &kp N8   &kp N9   &kp L       &kp EQUAL &kp UNDER &kp LBRC       &kp RBRC      &kp PIPE       &trans
                              &kp LGUI &kp LALT &kp TAB     &kp RET   &trans    &trans
@@ -43,13 +43,13 @@
 // |  `   |  !  |  !  |  @  |  #  | VOLU|   |  ^  |  &  |  *  |  (  |  )  | INS  |
 // | SHFT | BT1 |  $  |  %  |  ^  | VOLD|   | LFT | DWN |  UP | RGT |  \  | SHFT |
 // | LWR  |BTCLR|  &  |  *  |  (  | VOLM|   | END | PGDN| PGUP| HOME| "|" |      |
-//                    | GUI | ALT | TAB |   | DEL |     |     |
+//                    | GUI | ALT | TAB |   | RET |     |     |
                         bindings = <
    &kp GRAVE  &kp EXCL     &kp EXCL       &kp AT     &kp HASH     &kp C_VOL_UP   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR &kp INS
    &kp LSHFT  &bt BT_SEL 0 &kp DLLR     &kp PRCNT    &kp CARET    &kp C_VOL_DN   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp BSLH &kp RSHFT
    &trans     &bt BT_CLR   &kp AMPS     &kp ASTRK    &kp LPAR     &kp C_MUTE     &kp END   &kp PG_DN &kp PG_UP &kp HOME  &kp PIPE
-                                        &kp LGUI     &kp LALT     &kp TAB        &kp DEL   &trans    &trans
+                                        &kp LGUI     &kp LALT     &kp TAB        &kp RET   &trans    &trans
                         >;
                 };
         };
-}
+};
