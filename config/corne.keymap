@@ -16,40 +16,40 @@
 // -----------------------------------------------------------------------------------------
 // |  ESC |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
 // | SHFT |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | RSE  |
+// | LWR  |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | RSE  |
 //                    | GUI | ALT | SPC |   | RET | LWR  | RSE |
                         bindings = <
-   &kp ESC   &kp Q &kp W &kp E &kp R &kp T      &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp LSHFT &mt LCTRL A &mt LALT S &mt LGUI D &kp F &kp G      &kp H &kp J  &kp K     &kp L   &kp SEMI &mt RSHFT SQT
-   &kp LCTRL &kp Z &kp X &kp C &kp V &kp B      &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mo 2
+   &kp ESC   &kp Q       &kp W      &kp E      &kp R &kp T      &kp Y &kp U  &kp I      &kp O      &kp P          &kp BSPC
+   &kp LSHFT &mt LCTRL A &mt LALT S &mt LGUI D &kp F &kp G      &kp H &kp J  &mt RGUI K &mt RALT L &mt RCTRL SEMI &mt RSHFT SQT
+   &mo 2     &kp Z       &kp X      &kp C      &kp V &kp B      &kp N &kp M  &kp COMMA  &kp DOT    &kp FSLH       &mo 2
                   &kp LGUI &kp LALT &kp SPACE   &kp RET  &mo 1 &mo 2
                         >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  ~   |  0  |  1  |  2  |  3  |  _  |   |  =  |  +  |  (  |  )  |  0  | INS  |
+// |  ~   |  0  |  1  |  2  |  3  |  _  |   |  =  |  +  |  (  |  )  |  0  | DEL  |
 // | SHFT | CAPS|  4  |  5  |  6  |  =  |   |  _  |  -  |  [  |  ]  |  \  | SHFT |
-// | CTRL |  H  |  7  |  8  |  9  |  L  |   |  =  |  _  |  {  |  }  | "|" |      |
-//                    | GUI | ALT | TAB |   | INS |     |     |
+// | LWR  |  H  |  7  |  8  |  9  |  L  |   |  =  |  _  |  {  |  }  | "|" |      |
+//                    | GUI | ALT | TAB |   | RET |     |     |
                         bindings = <
-   &kp TILDE &kp N0   &kp N1 &kp N2   &kp N3   &kp UNDER   &kp EQUAL &kp PLUS  &kp LPAR  &kp RPAR &kp N0   &kp INS
+   &kp TILDE &kp N0   &kp N1 &kp N2   &kp N3   &kp UNDER   &kp EQUAL &kp PLUS  &kp LPAR  &kp RPAR &kp N0   &kp DEL
    &kp LSHFT &kp CAPS &kp N4 &kp N5   &kp N6   &kp EQUAL   &kp UNDER &kp MINUS &mt RGUI LBKT  &mt RALT RBKT &mt RCTRL BSLH &kp RSHFT
-   &kp LCTRL &kp H    &kp N7 &kp N8   &kp N9   &kp L       &kp EQUAL &kp UNDER &kp LBRC  &kp RBRC &kp PIPE &trans
-                             &kp LGUI &kp LALT &kp TAB     &kp INS   &trans    &trans
+   &trans    &kp H    &kp N7 &kp N8   &kp N9   &kp L       &kp EQUAL &kp UNDER &kp LBRC       &kp RBRC      &kp PIPE       &trans
+                             &kp LGUI &kp LALT &kp TAB     &kp RET   &trans    &trans
                         >;
                 };
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  `   |  !  |  !  |  @  |  #  | VOLU|   |  ^  |  &  |  *  |  (  |  )  |  \   |
+// |  `   |  !  |  !  |  @  |  #  | VOLU|   |  ^  |  &  |  *  |  (  |  )  | INS  |
 // | SHFT | BT1 |  $  |  %  |  ^  | VOLD|   | LFT | DWN |  UP | RGT |  \  | SHFT |
-// | CTRL |BTCLR|  &  |  *  |  (  | VOLM|   | END | PGDN| PGUP| HOME| "|" |      |
+// | LWR  |BTCLR|  &  |  *  |  (  | VOLM|   | END | PGDN| PGUP| HOME| "|" |      |
 //                    | GUI | ALT | TAB |   | DEL |     |     |
                         bindings = <
-   &kp GRAVE  &kp EXCL     &kp EXCL       &kp AT     &kp HASH     &kp C_VOL_UP   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR &kp BSLH
+   &kp GRAVE  &kp EXCL     &kp EXCL       &kp AT     &kp HASH     &kp C_VOL_UP   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR &kp INS
    &kp LSHFT  &bt BT_SEL 0 &kp DLLR     &kp PRCNT    &kp CARET    &kp C_VOL_DN   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp BSLH &kp RSHFT
-   &kp LCTRL  &bt BT_CLR   &kp AMPS     &kp ASTRK    &kp LPAR     &kp C_MUTE     &kp END   &kp PG_DN &kp PG_UP &kp HOME  &kp PIPE
+   &trans     &bt BT_CLR   &kp AMPS     &kp ASTRK    &kp LPAR     &kp C_MUTE     &kp END   &kp PG_DN &kp PG_UP &kp HOME  &kp PIPE
                                         &kp LGUI     &kp LALT     &kp TAB        &kp DEL   &trans    &trans
                         >;
                 };
         };
-};
+}
