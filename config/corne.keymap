@@ -11,7 +11,6 @@
 / {
         keymap {
                 compatible = "zmk,keymap";
-
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // |  ESC |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
@@ -22,7 +21,7 @@
    &mt LGUI ESC   &kp Q       &kp W      &kp E      &kp R &kp T      &kp Y &kp U  &kp I      &kp O      &kp P     &mt RGUI BSPC
    &kp LSHFT      &kp A       &kp S      &kp D      &kp F &kp G      &kp H &kp J  &kp K      &kp L      &kp SEMI  &mt RSHFT SQT
    &mo 2          &kp Z       &kp X      &kp C      &kp V &kp B      &kp N &kp M  &kp COMMA  &kp DOT    &kp FSLH  &mo 2
-                  &kp LGUI    &kp LCTRL  &mt LALT SPACE        &mt RALT RET  &mo 1 &mo 2
+                  &kp LGUI    &kp LCTRL  &mt LALT SPACE              &kp RET  &mo 1 &mo 2
                         >;
                 };
                 lower_layer {
