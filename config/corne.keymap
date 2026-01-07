@@ -26,22 +26,22 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  ~   |  0  |  1  |  2  |  3  |  _  |   |  =  |  +  |  (  |  )  |  0  | DEL  |
-// | SHFT | CAPS|  4  |  5  |  6  |  =  |   |  _  |  -  |  [  |  ]  |  \  | SHFT |
-// | LWR  |  H  |  7  |  8  |  9  |  L  |   |  =  |  _  |  {  |  }  | "|" | RSE  |
+// |  ~   |  0  |  7  |  8  |  9  |  0  |   |  =  |  +  |  (  |  )  |  0  | DEL  |
+// | SHFT | CAPS|  4  |  5  |  6  |  0  |   |  _  |  -  |  [  |  ]  |  \  | SHFT |
+// | LWR  |  H  |  1  |  2  |  3  |  0  |   |  =  |  _  |  {  |  }  | "|" | RSE  |
 //                    | GUI | CTRL| TAB |   | RET |     |     |
                         bindings = <
-   &kp TILDE &kp N0   &kp N1 &kp N2   &kp N3    &kp UNDER   &kp EQUAL &kp PLUS  &kp LPAR       &kp RPAR      &kp N0         &mt RGUI DEL
-   &kp LSHFT &kp CAPS &kp N4 &kp N5   &kp N6    &kp EQUAL   &kp UNDER &kp MINUS &kp LBKT       &kp RBKT      &kp BSLH       &kp RSHFT
-   &trans    &kp H    &kp N7 &kp N8   &kp N9    &kp L       &kp EQUAL &kp UNDER &kp LBRC       &kp RBRC      &kp PIPE       &trans
+   &kp TILDE &kp N0   &kp N7 &kp N8   &kp N9    &kp N0      &kp EQUAL &kp PLUS  &kp LPAR       &kp RPAR      &kp N0         &mt RGUI DEL
+   &kp LSHFT &kp CAPS &kp N4 &kp N5   &kp N6    &kp N0      &kp UNDER &kp MINUS &kp LBKT       &kp RBKT      &kp BSLH       &kp RSHFT
+   &trans    &kp H    &kp N1 &kp N2   &kp N3    &kp N0      &kp EQUAL &kp UNDER &kp LBRC       &kp RBRC      &kp PIPE       &trans
                              &trans   &trans  &mt LALT TAB  &kp RET   &trans    &trans
                         >;
                 };
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  `   |  !  |  !  |  @  |  #  | VOLU|   |  ^  |  &  |  *  |  (  |  )  | INS  |
+// |  `   |  !  |  &  |  *  |  (  | VOLU|   |  ^  |  &  |  *  |  (  |  )  | INS  |
 // | SHFT | BT1 |  $  |  %  |  ^  | VOLD|   | LFT | DWN |  UP | RGT |  \  | SHFT |
-// | LWR  |BTCLR|  &  |  *  |  (  | VOLM|   | END | PGDN| PGUP| HOME| "|" | RSE  |
+// | LWR  |BTCLR|  !  |  @  |  #  | VOLM|   | END | PGDN| PGUP| HOME| "|" | RSE  |
 //                    | GUI | CTRL| TAB |   | RET |     |     |
                         bindings = <
    &kp GRAVE  &kp EXCL     &kp EXCL     &kp AT       &kp HASH     &kp C_VOL_UP   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR &kp INS
