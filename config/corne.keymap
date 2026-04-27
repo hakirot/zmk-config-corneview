@@ -16,7 +16,7 @@
 // |  ESC |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
 // | SHFT |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
 // | LWR  |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | RSE  |
-//                    | GUI | CTRL| SPC |   | RET | LWR  | RSE |
+//                    | CAPS|LCTRL| SPC |   | RET | LWR  | RSE |
                         bindings = <
    &mt LGUI ESC   &kp Q       &kp W      &kp E      &kp R &kp T      &kp Y &kp U  &kp I      &kp O      &kp P     &mt RGUI BSPC
    &kp LSHFT      &kp A       &kp S      &kp D      &kp F &kp G      &kp H &kp J  &kp K      &kp L      &kp SEMI  &mt RSHFT SQT
@@ -27,14 +27,14 @@
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  ~   |  0  |  7  |  8  |  9  |  0  |   |  =  |  +  |  (  |  )  |  0  | DEL  |
-// | SHFT |  0  |  4  |  5  |  6  |  0  |   |  _  |  -  |  [  |  ]  |  \  | SHFT |
+// | SHFT | TAB |  4  |  5  |  6  |  0  |   |  _  |  -  |  [  |  ]  |  \  | SHFT |
 // | LWR  |  0  |  1  |  2  |  3  |  0  |   |  =  |  _  |  {  |  }  | "|" | RSE  |
-//                    | GUI | CTRL| TAB |   | RET |     |     |
+//                    | GUI |LCTRL| TAB |   | RET |     |     |
                         bindings = <
-   &kp TILDE &kp N0   &kp N7 &kp N8   &kp N9    &kp C_NEXT  &kp EQUAL &kp PLUS  &kp LPAR       &kp RPAR      &kp N0         &mt RGUI DEL
-   &kp LSHFT &kp TAB  &kp N4 &kp N5   &kp N6    &kp C_PP    &kp UNDER &kp MINUS &kp LBKT       &kp RBKT      &kp BSLH       &kp RSHFT
-   &trans    &kp N0   &kp N1 &kp N2   &kp N3    &kp C_PREV  &kp EQUAL &kp UNDER &kp LBRC       &kp RBRC      &kp PIPE       &trans
-                             &kp CAPS &trans    &mt LALT TAB &kp RET   &trans    &trans
+   &kp TILDE &kp N0   &kp N7 &kp N8   &kp N9    &kp C_NEXT      &kp EQUAL &kp PLUS  &kp LPAR  &kp RPAR  &kp N0    &mt RGUI DEL
+   &kp LSHFT &kp TAB  &kp N4 &kp N5   &kp N6    &kp C_PP        &kp UNDER &kp MINUS &kp LBKT  &kp RBKT  &kp BSLH  &kp RSHFT
+   &trans    &kp N0   &kp N1 &kp N2   &kp N3    &kp C_PREV      &kp EQUAL &kp UNDER &kp LBRC  &kp RBRC  &kp PIPE  &trans
+                        &kp CAPS &trans    &mt LALT TAB         &kp RET   &trans    &trans
                         >;
                 };
                 raise_layer {
